@@ -13,6 +13,20 @@ const config: Config = {
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
+      colors: {
+        steam: "#4C5945",
+        weldedIron: "#4C5844",
+        steamGold: "#C1B657",
+        steamGold2: "#958831",
+        steamOlive: "#A5B19D",
+        trachery: "#3F4738",
+        borderTopLeft: "#808080",
+        borderBottomRight: "#282E22",
+        scrollBackground: "#5A6A50",
+      },
+      fontFamily: {
+        verdana: ["Verdana", "sans-serif"],
+      },
     },
   },
   plugins: [],

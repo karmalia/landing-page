@@ -1,3 +1,57 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Define the scrollbar style */
+::-webkit-scrollbar {
+  width: 20px;
+  height: 16px;
+}
+
+/* Define the thumb style */
+::-webkit-scrollbar-thumb {
+  background: #4c5844;
+  border-style: solid; /* Ensure border is solid */
+  border-width: 2px;
+  border-top-color: #808080;
+  border-left-color: #808080;
+  border-right-color: #282e22;
+  border-bottom-color: #282e22;
+}
+
+/* Define the track style */
+::-webkit-scrollbar-track {
+  background-color: #5a6a50;
+}
+::-webkit-scrollbar-button {
+  height: 20px;
+  background-color: #4c5844;
+  border-style: solid; /* Ensure border is solid */
+  border-top-color: #808080;
+  border-left-color: #808080;
+  border-right-color: #282e22;
+  border-bottom-color: #282e22;
+  border-width: 2px;
+}
+
+::-webkit-scrollbar-button:hover {
+  background-color: #4c5844;
+}
+
+::-webkit-scrollbar-button:vertical:decrement {
+  background-image: url("../public/scrollbar/increment.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+::-webkit-scrollbar-button:vertical:increment {
+  background-image: url("../public/scrollbar/decrement.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* Define the button style when being hovered over */
+::-webkit-scrollbar-button:hover {
+  background-color: #999999;
+  border-style: solid; /* Ensure border is solid */
+}

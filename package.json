@@ -9,10 +9,12 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "clsx": "^2.1.1",
     "next": "14.2.5",
     "react": "^18",
     "react-dom": "^18",
-    "react-steam-components": "^0.0.4"
+    "react-steam-components": "c:\\Users\\jakam\\Desktop\\dev\\ui-library-showdown\\react-steam-components-0.0.63.tgz",
+    "tailwind-merge": "^2.4.0"
   },
   "devDependencies": {
     "@types/node": "^20",
