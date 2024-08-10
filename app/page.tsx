@@ -5,12 +5,16 @@ import Hobbies from "@/components/hobbies/hobbies";
 import Icons from "@/components/icons";
 import Projects from "@/components/projects/projects";
 import Tabs from "@/components/shared/tabs";
-import SteamTabs from "@/components/SteamTabs";
-import SteamText from "@/components/SteamText";
+
 import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
-import { SteamButton, SteamWindow } from "react-steam-components";
+import {
+  SteamButton,
+  SteamWindow,
+  SteamText,
+  SteamTabs,
+} from "react-steam-components";
 
 const ContentLookUp = {
   0: AboutMe,
@@ -79,16 +83,11 @@ export default function Home() {
                 className="w-40 h-auto bg-black grid place-content-center"
                 variant="inner"
               >
-                <Image src="/profile.png" width={150} height={150} />
+                <Image src="/profile.png" width={150} height={150} alt="me" />
               </SteamWindow>
               <div className="flex flex-col justify-between">
                 <div>
-                  <SteamText
-                    className="text-red-500 font-verdana text-[12px] text-center"
-                    variant="goldLight"
-                  >
-                    ISMAIL SEVGI
-                  </SteamText>
+                  <SteamText variant="goldLight">ISMAIL SEVGI</SteamText>
                   <div className="flex items-center gap-1 ">
                     <Icons.TurkeyFlag className="w-4 h-4" />
                     <span className="text-steamOlive font-verdana text-[12px]">

@@ -1,6 +1,6 @@
 import React from "react";
 import { SteamWindow } from "react-steam-components";
-import SteamText from "../SteamText";
+import { SteamText } from "react-steam-components";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -14,11 +14,11 @@ function AboutMe({}: Props) {
     >
       <SteamText variant="olive">Hello There!👋</SteamText>
       <SteamText variant="olive">
-        I'm a web developer with a passion for creating interactive experiences.
-        I have a strong foundation in web development and am currently expanding
-        my skillset to mobile app development. I am currently working on a
-        mobile app that will help people find the best places to eat in their
-        area.
+        I&apos;m a web developer with a passion for creating interactive
+        experiences. I have a strong foundation in web development and am
+        currently expanding my skillset to mobile app development. I am
+        currently working on a mobile app that will help people find the best
+        places to eat in their area.
       </SteamText>
       <SteamText variant="goldLight">EXPERIENCES</SteamText>
       {/* İnovasyon */}

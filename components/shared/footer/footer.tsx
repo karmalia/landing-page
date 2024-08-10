@@ -1,8 +1,7 @@
 "use client";
-import SteamText from "@/components/SteamText";
 import Link from "next/link";
 import React from "react";
-import { SteamWindow } from "react-steam-components";
+import { SteamWindow, SteamText } from "react-steam-components";
 
 type Props = {};
 
