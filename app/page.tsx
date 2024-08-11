@@ -8,7 +8,7 @@ import Tabs from "@/components/shared/tabs";
 
 import Image from "next/image";
 import Link from "next/link";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import {
   SteamButton,
   SteamWindow,
@@ -24,6 +24,7 @@ const ContentLookUp = {
 };
 
 export default function Home() {
+  const [streakImageSrc, setStreakImageSrc] = useState<string | null>(null);
   const list = [
     {
       label: "About",
@@ -48,6 +49,16 @@ export default function Home() {
     const index = list.findIndex((item) => item.label === tab.label);
     setActiveTab((index as range) || 0);
   };
+
+  useEffect(() => {
+    async function fetchStats() {
+      const res = await fetch("/api/stats");
+      const data = await res.json();
+      setStreakImageSrc(data.streakImageSrc);
+    }
+
+    fetchStats();
+  }, []);
 
   const Content = ContentLookUp[activeTab];
 
@@ -134,6 +145,16 @@ export default function Home() {
                     </span>
                   </div>
                 </div>
+              </div>
+              <div>
+                {streakImageSrc && (
+                  <Image
+                    src={streakImageSrc}
+                    alt="GitHub Streak"
+                    width={500} // You can set this to the desired width
+                    height={200} // You can set this to the desired height
+                  />
+                )}
               </div>
             </div>
 

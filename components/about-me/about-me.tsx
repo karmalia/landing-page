@@ -51,7 +51,7 @@ function AboutMe({}: Props) {
           <ul className="text-xs flex flex-col gap-1 w-min">
             <li className=" flex gap-1 items-center">
               <Image
-                src="/pixel-react.png"
+                src="/tech/pixel-react.png"
                 width={15}
                 height={15}
                 alt="React"
@@ -63,7 +63,7 @@ function AboutMe({}: Props) {
             </li>
             <li className=" flex gap-1 items-center ">
               <Image
-                src="/pixel-next.png"
+                src="/tech/pixel-next.png"
                 width={15}
                 height={15}
                 alt="React"
@@ -75,7 +75,7 @@ function AboutMe({}: Props) {
             </li>
             <li className=" flex gap-1 items-center ">
               <Image
-                src="/pixel-tailwindcss.png"
+                src="/tech/pixel-tailwindcss.png"
                 width={15}
                 height={15}
                 alt="React"
@@ -87,7 +87,7 @@ function AboutMe({}: Props) {
             </li>
             <li className=" flex gap-1 items-center ">
               <Image
-                src="/pixel-typescript.png"
+                src="/tech/pixel-typescript.png"
                 width={15}
                 height={15}
                 alt="React"
@@ -153,7 +153,7 @@ function AboutMe({}: Props) {
           <ul className="text-xs flex flex-col gap-1 ">
             <li className=" flex gap-1 items-center">
               <Image
-                src="/pixel-react.png"
+                src="/tech/pixel-react.png"
                 width={15}
                 height={15}
                 alt="React"
@@ -165,7 +165,7 @@ function AboutMe({}: Props) {
             </li>
             <li className=" flex gap-1 items-center">
               <Image
-                src="/icons8-expo-500.png"
+                src="/tech/icons8-expo-500.png"
                 width={15}
                 height={15}
                 alt="React"
@@ -178,7 +178,7 @@ function AboutMe({}: Props) {
 
             <li className=" flex gap-1 items-center ">
               <Image
-                src="/pixel-typescript.png"
+                src="/tech/pixel-typescript.png"
                 width={15}
                 height={15}
                 alt="React"
@@ -236,7 +236,7 @@ function AboutMe({}: Props) {
           <ul className="text-xs flex flex-col gap-1 w-min">
             <li className=" flex gap-1 items-center">
               <Image
-                src="/pixel-react.png"
+                src="/tech/pixel-react.png"
                 width={15}
                 height={15}
                 alt="React"
@@ -248,7 +248,7 @@ function AboutMe({}: Props) {
             </li>
             <li className=" flex gap-1 items-center">
               <Image
-                src="/icons8-nodejs-48.png"
+                src="/tech/icons8-nodejs-48.png"
                 width={15}
                 height={15}
                 alt="React"
@@ -261,7 +261,7 @@ function AboutMe({}: Props) {
 
             <li className=" flex gap-1 items-center ">
               <Image
-                src="/icons8-javascript-480.png"
+                src="/tech/icons8-javascript-480.png"
                 width={15}
                 height={15}
                 alt="JavaScript"
