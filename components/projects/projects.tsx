@@ -59,7 +59,7 @@ const TechStacks = {
   All: [...FrontEndTechStack, ...BackEndTechStack],
 };
 
-function Projects({}: Props) {
+function Projects() {
   const filters = ["All", "Front-end", "Back-end"];
   const [currentTechStack, setCurrentTechStack] = React.useState({
     label: "All",
