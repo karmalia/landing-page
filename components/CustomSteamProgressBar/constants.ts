@@ -1,0 +1,1 @@
+export const DEFAULT_PROGRESS_KNOB_WIDTH = 16;
