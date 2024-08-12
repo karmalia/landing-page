@@ -1,5 +1,6 @@
 "use client";
 import AboutMe from "@/components/about-me/about-me";
+import CustomSteamWindow from "@/components/CustomSteamWindow";
 import Educations from "@/components/educations/educations";
 import Hobbies from "@/components/hobbies/hobbies";
 import Icons from "@/components/icons";
@@ -51,7 +52,7 @@ export default function Home() {
       <div className="w-full h-full absolute top-0 left-0 z-0 ">
         <Image
           src="/windows_xp.jpg"
-          className="w-full h-full"
+          className="w-full h-full object-cover"
           alt="Vercel Logo"
           width={1920}
           height={1080}
@@ -59,9 +60,9 @@ export default function Home() {
         <div className="absolute bg-black/40 top-0 left-0 w-full h-full" />
       </div>
 
-      <section className="z-10 absolute top-0 left-0 w-full h-full grid place-content-center">
-        <SteamWindow className="w-[1024px] h-auto p-2 space-y-4">
-          <div className="flex">
+      <section className="z-10 absolute top-0 left-0 w-full h-full flex justify-center items-start mt-12 ">
+        <CustomSteamWindow className="container mx-auto  h-auto p-2 space-y-4">
+          <div className="w-full flex justify-between">
             <div className="flex w-full items-center gap-2">
               <Icons.SteamIcon className="w-6 h-6" />
               <span className="text-white font-verdana text-[12px] ">
@@ -72,10 +73,10 @@ export default function Home() {
               <Icons.CloseIcon className="w-3 h-3" />
             </SteamButton>
           </div>
-          <SteamWindow className="w-[996px] mx-auto p-4 grid grid-cols-2 gap-2">
+          <SteamWindow className=" mx-auto p-4 gap-2">
             <ProfileHeader />
 
-            <div className="mt-12 col-span-2">
+            {/* <div className="mt-12 col-span-2">
               <SteamTabs
                 handleTab={handleTabChange}
                 activeTab={activeTab}
@@ -83,9 +84,9 @@ export default function Home() {
               >
                 <Content />
               </SteamTabs>
-            </div>
+            </div> */}
           </SteamWindow>
-        </SteamWindow>
+        </CustomSteamWindow>
       </section>
     </main>
   );

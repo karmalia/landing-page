@@ -27,6 +27,16 @@ const config: Config = {
       fontFamily: {
         verdana: ["Verdana", "sans-serif"],
       },
+      container: {
+        center: true,
+        screens: {
+          xs: "100%",
+          sm: "425px",
+          md: "640px",
+          lg: "768px",
+          xl: "820px",
+        },
+      },
     },
   },
   plugins: [],
