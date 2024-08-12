@@ -19,15 +19,15 @@ import {
 } from "react-steam-components";
 
 const ContentLookUp = {
-  0: AboutMe,
-  1: Projects,
-  2: Skills,
-  3: Educations,
-  4: Hobbies,
+  0: { element: AboutMe, label: "About Me" },
+  1: { element: Projects, label: "Projects" },
+  2: { element: Skills, label: "Skills" },
+  3: { element: Educations, label: "Educations" },
+  4: { element: Hobbies, label: "Hobbies" },
 };
 
 const list = Object.values(ContentLookUp).map((val, index) => ({
-  label: val.name,
+  label: val.label,
   value: index.toString(),
 }));
 
@@ -43,7 +43,8 @@ export default function Home() {
     []
   );
 
-  const Content = ContentLookUp[activeTab] || (() => <div>Not Found</div>);
+  const Content =
+    ContentLookUp[activeTab].element || (() => <div>Not Found</div>);
 
   return (
     <main className="w-dvw h-dvh relative">

@@ -15,7 +15,16 @@ const hobbies = [
       text: "My OGS Account",
     },
   },
-
+  {
+    imgUrl: "/hobbies/bass.jpg",
+    title: "Bass Guitar",
+    description:
+      "I've been playing bass guitar for seven years. I love playing punk and metal songs. My favorite bands are RHCP, RATM, and Tool.",
+    link: {
+      href: "https://music.youtube.com/playlist?list=PLxC3T9HKOBg5KOyqUcgHYBIESyLjDEqCS&si=YNoqfYEqHw_DJGjJ",
+      text: "My Youtube Playlist",
+    },
+  },
   {
     imgUrl: "/hobbies/books.avif",
     title: "Reading",
