@@ -31,11 +31,7 @@ const calculateKnobCount = (
   percentageWidth: number,
   knobWidth = DEFAULT_PROGRESS_KNOB_WIDTH
 ) => {
-  console.log("percentageWidth: ", percentageWidth);
-  console.log("knobWidth: ", knobWidth);
-
   const remainingWidth = percentageWidth % (knobWidth + 6);
-  console.log("remainingWidth: ", remainingWidth);
 
   if (percentageWidth && knobWidth) {
     return Math.floor(percentageWidth / (DEFAULT_PROGRESS_KNOB_WIDTH + 6));

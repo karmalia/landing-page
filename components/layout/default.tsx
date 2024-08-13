@@ -30,6 +30,10 @@ const list = [
     value: "/educations",
   },
   {
+    label: "Referances",
+    value: "/referances",
+  },
+  {
     label: "Hobbies",
     value: "/hobbies",
   },
