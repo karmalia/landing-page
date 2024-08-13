@@ -66,7 +66,7 @@ function Projects() {
   return (
     <SteamWindow
       variant="inner"
-      className="h-[400px] max-h-[400px] overflow-y-auto p-3 space-y-2 w-full"
+      className="max-h-[400px] overflow-y-auto p-3 space-y-2 w-full"
     >
       <div className="">
         <SteamText variant="goldLight">

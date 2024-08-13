@@ -24,8 +24,8 @@ function Education({
   progressPercentage,
 }: EducationProps) {
   return (
-    <BouncyWrapper trigger={[]}>
-      <SteamWindow className="p-2 flex gap-2 w-full ">
+    <SteamWindow className="p-2 gap-2 grid grid-cols-12">
+      <div className="col-span-12 lg:col-span-2">
         <SteamWindow variant="inner" className="w-max p-2 h-32">
           <div className="w-24 h-full">
             <Image
@@ -37,20 +37,20 @@ function Education({
             />
           </div>
         </SteamWindow>
-        <div className="w-full">
-          <SteamText variant="goldLight">
-            <span className="text-lg">{degree}</span>
-          </SteamText>
-          <SteamText variant="olive">
-            {universityName} - {startDate} - {endDate}
-          </SteamText>
-          <div className="mt-4 w-full">
-            <SteamText variant="goldLight">Progress:</SteamText>
-            <CustomSteamProgressBar progressPercentage={progressPercentage} />
-          </div>
+      </div>
+      <div className="w-full col-span-12 lg:col-span-10">
+        <SteamText variant="goldLight">
+          <span className="text-lg">{degree}</span>
+        </SteamText>
+        <SteamText variant="olive">
+          {universityName} - {startDate} - {endDate}
+        </SteamText>
+        <div className="mt-4 w-full">
+          <SteamText variant="goldLight">Progress:</SteamText>
+          <CustomSteamProgressBar progressPercentage={progressPercentage} />
         </div>
-      </SteamWindow>
-    </BouncyWrapper>
+      </div>
+    </SteamWindow>
   );
 }
 

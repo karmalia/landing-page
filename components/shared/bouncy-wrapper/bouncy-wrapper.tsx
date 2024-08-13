@@ -14,7 +14,7 @@ function BouncyWrapper({
     if (wrapper) {
       const { scrollHeight } = wrapper;
       //@ts-ignore
-      wrapper.style.maxHeight = `${400}px`;
+      wrapper.style.maxHeight = `${scrollHeight}px`;
     }
   }, [trigger.length]);
 

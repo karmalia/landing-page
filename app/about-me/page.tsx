@@ -95,7 +95,7 @@ function AboutMePage() {
   return (
     <CustomSteamWindow
       variant="inner"
-      className="p-3 space-y-2 h-[400px] max-h-[400px] overflow-y-auto"
+      className="p-3 space-y-2 max-h-[400px] overflow-y-auto"
     >
       <SteamText variant="olive">Hello There!👋</SteamText>
       <SteamText variant="olive">

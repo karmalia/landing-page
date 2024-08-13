@@ -44,7 +44,7 @@ function Educations() {
   return (
     <SteamWindow
       variant="inner"
-      className="p-2 space-y-2 w-full h-[400px] max-h-[400px] overflow-y-auto"
+      className="p-2 space-y-2 w-full  max-h-[400px] overflow-y-auto"
     >
       <SteamText variant="goldLight">
         <span className="text-lg">📚 Education</span>

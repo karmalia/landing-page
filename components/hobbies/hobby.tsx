@@ -20,9 +20,9 @@ function Hobby({
   };
 }) {
   return (
-    <BouncyWrapper trigger={[]}>
-      <CustomSteamWindow className="p-2 grid grid-cols-6 gap-2 w-full">
-        <CustomSteamWindow variant="inner" className="p-2 h-32 col-span-1">
+    <CustomSteamWindow className="p-2 grid grid-cols-6 gap-2 w-full">
+      <div className=" col-span-6 md:col-span-1 flex items-center">
+        <CustomSteamWindow variant="inner" className="p-2 h-32">
           <Image
             src={imgUrl}
             width={350}
@@ -31,20 +31,21 @@ function Hobby({
             className="w-full h-full"
           />
         </CustomSteamWindow>
-        <div className="col-span-5 flex flex-col justify-start gap-1">
-          <CustomSteamText variant="goldLight">
-            <span className="text-lg">{title}</span>
-          </CustomSteamText>
+      </div>
 
-          <CustomSteamText variant="olive">
-            <span className="text-md">{description}</span>
-          </CustomSteamText>
-          <CustomSteamText variant="underlined">
-            <Link href={link.href}>{link.text}</Link>
-          </CustomSteamText>
-        </div>
-      </CustomSteamWindow>
-    </BouncyWrapper>
+      <div className="col-span-5 flex flex-col justify-start gap-1">
+        <CustomSteamText variant="goldLight">
+          <span className="text-lg">{title}</span>
+        </CustomSteamText>
+
+        <CustomSteamText variant="olive">
+          <span className="text-md">{description}</span>
+        </CustomSteamText>
+        <CustomSteamText variant="underlined">
+          <Link href={link.href}>{link.text}</Link>
+        </CustomSteamText>
+      </div>
+    </CustomSteamWindow>
   );
 }
 

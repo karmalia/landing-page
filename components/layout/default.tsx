@@ -64,10 +64,10 @@ function DefaultLayout({ children }: Props) {
             <Icons.CloseIcon className="w-3 h-3" />
           </SteamButton>
         </div>
-        <SteamWindow className="mx-auto p-4 gap-2">
+        <SteamWindow className="mx-auto space-y-4 p-4 h-auto">
           <ProfileHeader />
 
-          <div className="mt-12 col-span-2">
+          <div className="col-span-2">
             <CustomSteamTabs
               handleTab={handleTab}
               activeTab={activeTab}

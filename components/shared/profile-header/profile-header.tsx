@@ -19,7 +19,7 @@ function ProfileHeader() {
   }, []);
 
   return (
-    <div className="h-auto sm:h-32  md:w-full sm:flex justify-between gap-1 ">
+    <div className="sm:h-36  md:w-full sm:flex  md:justify-between gap-2 ">
       <div className="flex sm:flex-row  gap-2 ">
         <CustomSteamWindow className="sm:w-32 h-24 sm:h-full" variant="inner">
           <div className="w-20 sm:w-full sm:h-full md:p-2 h-24 p-1  ">
@@ -45,7 +45,7 @@ function ProfileHeader() {
             </div>
           </div>
 
-          <div className="flex flex-col gap-2 md:items-start ">
+          <div className="flex flex-col gap-2 md:items-start whitespace-pre-wrap w-max ">
             <div className="flex gap-1 items-center text-xs md:text-sm ">
               <Icons.LinkedInIcon className="w-4 h-4" />
               <span>
@@ -86,7 +86,7 @@ function ProfileHeader() {
         </div>
       </div>
 
-      <div className="sm:h-full flex h-36  mt-2 sm:mt-0">
+      <div className="h-36 md:h-full flex  mt-2 sm:mt-0 max-w-max">
         {streakImageSrc && (
           <Image
             src={streakImageSrc}

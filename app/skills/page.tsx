@@ -4,6 +4,7 @@ import React from "react";
 import { SteamRadio, SteamText, SteamWindow } from "react-steam-components";
 import CustomSteamRadio from "@/components/CustomSteamRadio/CustomSteamRadio";
 import BouncyWrapper from "@/components/shared/bouncy-wrapper/bouncy-wrapper";
+import Skill from "@/components/skills/skill";
 
 const FrontEndTechStack = [
   {
@@ -93,18 +94,21 @@ function Skills() {
   };
 
   return (
-    <SteamWindow variant="inner" className="px-2 py-1 space-y-2 h-[400px]">
+    <SteamWindow
+      variant="inner"
+      className="px-2 py-1 space-y-2 max-h-[400px] overflow-y-auto"
+    >
       <SteamText variant="goldLight">
         <span className="text-lg">🛠️ My Tech Stack</span>
       </SteamText>
       <SteamWindow className="flex flex-col justify-between p-2 ">
-        <div className="flex gap-4 py-2 pl-3 items-center">
+        <div className="flex flex-wrap gap-4 py-2 pl-3 items-center">
           {filters.map((filter, index) => (
             <CustomSteamRadio
               id={filter}
               name={filter}
               onChange={() => handleFilterChange(filter)}
-              key={filter}
+              key={filter + index}
               label={filter}
               checked={filter === currentTechStack.label}
             />
@@ -112,17 +116,7 @@ function Skills() {
         </div>
         <BouncyWrapper trigger={[currentTechStack]}>
           {currentTechStack.stack.map((tech, index) => (
-            <SteamWindow
-              key={index}
-              className="flex flex-col p-2 gap-1 items-center w-max fade-in-up"
-            >
-              <SteamWindow variant="inner" className="p-2">
-                <Image width={50} height={50} src={tech.src} alt={tech.label} />
-              </SteamWindow>
-              <SteamText variant="goldLight">
-                <span className="text-xs">{tech.label}</span>
-              </SteamText>
-            </SteamWindow>
+            <Skill key={index} {...tech} />
           ))}
         </BouncyWrapper>
       </SteamWindow>
