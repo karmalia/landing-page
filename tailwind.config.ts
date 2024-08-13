@@ -5,6 +5,8 @@ const config: Config = {
     "./pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./components/**/*.{js,ts,jsx,tsx,mdx}",
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
+
+    "./node_modules/react-steam-components/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
     extend: {
@@ -30,11 +32,15 @@ const config: Config = {
       container: {
         center: true,
         screens: {
-          xs: "100%",
-          sm: "425px",
-          md: "640px",
-          lg: "768px",
-          xl: "820px",
+          sm: "100%",
+
+          md: "100%",
+
+          lg: "1024px",
+
+          xl: "1024px",
+
+          "2xl": "1024px",
         },
       },
     },

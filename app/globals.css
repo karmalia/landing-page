@@ -2,20 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
-* {
-  box-sizing: border-box;
-}
-
-/* Define the scrollbar style */
 ::-webkit-scrollbar {
   width: 20px;
   height: 16px;
 }
 
-/* Define the thumb style */
 ::-webkit-scrollbar-thumb {
   background: #4c5844;
-  border-style: solid; /* Ensure border is solid */
+  border-style: solid;
   border-width: 2px;
   border-top-color: #808080;
   border-left-color: #808080;
@@ -23,14 +17,13 @@
   border-bottom-color: #282e22;
 }
 
-/* Define the track style */
 ::-webkit-scrollbar-track {
   background-color: #5a6a50;
 }
 ::-webkit-scrollbar-button {
   height: 20px;
   background-color: #4c5844;
-  border-style: solid; /* Ensure border is solid */
+  border-style: solid;
   border-top-color: #808080;
   border-left-color: #808080;
   border-right-color: #282e22;
@@ -54,10 +47,9 @@
   background-position: center;
 }
 
-/* Define the button style when being hovered over */
 ::-webkit-scrollbar-button:hover {
   background-color: #999999;
-  border-style: solid; /* Ensure border is solid */
+  border-style: solid;
 }
 
 @keyframes fadeInUp {

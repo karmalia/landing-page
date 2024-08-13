@@ -39,7 +39,7 @@ function Education({
         </SteamWindow>
         <div className="w-full">
           <SteamText variant="goldLight">
-            <h1 className="text-lg">{degree}</h1>
+            <span className="text-lg">{degree}</span>
           </SteamText>
           <SteamText variant="olive">
             {universityName} - {startDate} - {endDate}

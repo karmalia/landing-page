@@ -1,13 +1,14 @@
+"use client";
 import React from "react";
-import BouncyWrapper from "../shared/bouncy-wrapper/bouncy-wrapper";
+import BouncyWrapper from "@/components/shared/bouncy-wrapper/bouncy-wrapper";
 import {
   SteamProgressBar,
   SteamText,
   SteamWindow,
 } from "react-steam-components";
 import Image from "next/image";
-import CustomSteamProgressBar from "../CustomSteamProgressBar";
-import Education from "./education/education";
+import CustomSteamProgressBar from "@/components/CustomSteamProgressBar";
+import Education from "@/components/educations/education";
 
 const educations = [
   {

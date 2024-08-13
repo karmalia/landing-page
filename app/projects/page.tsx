@@ -1,3 +1,4 @@
+"use client";
 import Image from "next/image";
 import React from "react";
 import {
@@ -6,10 +7,10 @@ import {
   SteamText,
   SteamWindow,
 } from "react-steam-components";
-import CustomSteamRadio from "../CustomSteamRadio/CustomSteamRadio";
-import CustomSteamProgressBar from "../CustomSteamProgressBar";
-import BouncyWrapper from "../shared/bouncy-wrapper/bouncy-wrapper";
-import Project from "./project/project";
+import CustomSteamRadio from "@/components/CustomSteamRadio/CustomSteamRadio";
+import CustomSteamProgressBar from "@/components/CustomSteamProgressBar";
+import BouncyWrapper from "@/components/shared/bouncy-wrapper/bouncy-wrapper";
+import Project from "@/components/projects/project";
 
 const MyProjects = [
   {
@@ -69,7 +70,7 @@ function Projects() {
     >
       <div className="">
         <SteamText variant="goldLight">
-          <h1 className="text-lg">🔨 My Projects</h1>
+          <span className="text-lg">🔨 My Projects</span>
         </SteamText>
       </div>
       <div className="space-y-4">

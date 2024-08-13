@@ -49,7 +49,7 @@ function Project({
           </SteamWindow>
           <div className="w-auto space-y-2">
             <SteamText variant="goldLight">
-              <h1 className="text-lg">{title}</h1>
+              <span className="text-lg">{title}</span>
             </SteamText>
             <SteamText variant="olive">{description}</SteamText>
             <Link href={link || "#"} target="_blank">

@@ -1,3 +1,4 @@
+"use client";
 import BouncyWrapper from "@/components/shared/bouncy-wrapper/bouncy-wrapper";
 import Image from "next/image";
 import Link from "next/link";
@@ -25,12 +26,12 @@ function Experience({
 }: ExperienceProps) {
   return (
     <BouncyWrapper trigger={[]}>
-      <SteamWindow className="p-3 grid grid-cols-2">
+      <SteamWindow className="p-3 grid grid-cols-2 gap-2">
         <div className="flex flex-col gap-2">
-          <div className="flex gap-2">
+          <div className="grid grid-cols-1 md:grid-cols-4 gap-2">
             <SteamWindow
               variant="inner"
-              className="p-1 w-[120px] h-[120px] flex items-center justify-center"
+              className="p-1 w-full h-full flex items-center justify-center"
             >
               <Image
                 src={imgUrl}
@@ -40,7 +41,7 @@ function Experience({
                 className="object-contain h-[100px]"
               />
             </SteamWindow>
-            <div className="h-full flex-1">
+            <div className="h-full flex-1 md:col-span-3">
               <SteamText variant="goldLight">
                 <Link
                   href="https://www.izmirteknoloji.com.tr/"

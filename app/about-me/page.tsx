@@ -1,10 +1,8 @@
+"use client";
+import Experience from "@/components/about-me/experience";
+import CustomSteamWindow from "@/components/CustomSteamWindow";
 import React from "react";
-import { SteamWindow } from "react-steam-components";
 import { SteamText } from "react-steam-components";
-import Image from "next/image";
-import Link from "next/link";
-import Experience from "./experience/experience";
-import BouncyWrapper from "../shared/bouncy-wrapper/bouncy-wrapper";
 
 const Experiences = [
   {
@@ -93,9 +91,9 @@ const Experiences = [
   },
 ];
 
-function AboutMe() {
+function AboutMePage() {
   return (
-    <SteamWindow
+    <CustomSteamWindow
       variant="inner"
       className="p-3 space-y-2 h-[400px] max-h-[400px] overflow-y-auto"
     >
@@ -115,8 +113,8 @@ function AboutMe() {
       {Experiences.map((experience, index) => (
         <Experience {...experience} key={index} />
       ))}
-    </SteamWindow>
+    </CustomSteamWindow>
   );
 }
 
-export default AboutMe;
+export default AboutMePage;

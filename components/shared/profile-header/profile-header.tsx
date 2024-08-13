@@ -1,3 +1,4 @@
+"use client";
 import CustomSteamText from "@/components/CustomSteamText/CustomSteamText";
 import CustomSteamWindow from "@/components/CustomSteamWindow";
 import Icons from "@/components/icons";
