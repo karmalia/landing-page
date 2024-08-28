@@ -64,7 +64,7 @@ const Experiences = [
     ],
   },
   {
-    imgUrl: "/freelance.png",
+    imgUrl: "/freelance.webp",
     companyName: "Freelance",
     jobTitle: "Fullstack Developer",
     startDate: "2020",
