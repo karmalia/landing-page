@@ -1,0 +1,29 @@
+/* SteamText.module.css */
+
+.baseClass {
+  @apply font-steam antialiased text-sm rounded-none;
+}
+
+.defaultVariant {
+  @apply text-white;
+}
+
+.oliveVariant {
+  @apply text-olive;
+}
+
+.underlinedVariant {
+  @apply underline text-olive;
+}
+
+.goldLightVariant {
+  @apply text-steamGoldLight;
+}
+
+.goldDarkVariant {
+  @apply text-steamGoldDark;
+}
+
+.disabledVariant {
+  @apply text-disabledText text-shadow-sm;
+}

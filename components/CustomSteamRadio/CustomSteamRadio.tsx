@@ -25,7 +25,7 @@ function CustomSteamRadio({
       <label htmlFor={id} className="flex gap-3">
         <div className="w-4 h-4 bg-transparent rounded-full border border-madderBlue flex place-content-center place-items-center">
           <div
-            className={`w-2 h-2 bg-steamGold rounded-full absolute ${
+            className={`w-2 h-2 bg-steamGold rounded-full ${
               checked ? "bg-steamGold" : "bg-transparent"
             }`}
           />

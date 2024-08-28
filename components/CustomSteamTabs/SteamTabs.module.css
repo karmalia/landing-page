@@ -1,0 +1,29 @@
+/* SteamTabs.module.css */
+
+.contentWrapper {
+  @apply p-2 min-w-52 min-h-24 bg-weldedIron;
+  @apply border-t-2 border-t-steamOlive;
+  @apply border-l-2 border-l-steamOlive;
+  @apply border-r-2 border-r-borderBottomRight;
+  @apply border-b-2 border-b-borderBottomRight;
+}
+
+.tab {
+  @apply cursor-pointer pl-2 pr-8 text-left;
+  @apply border-t-2 border-t-steamOlive;
+  @apply border-l-2 border-l-steamOlive;
+  @apply border-r-2 border-r-borderBottomRight;
+  @apply border-b-2 border-b-borderBottomRight;
+}
+
+.activeTab {
+  @apply text-steamGold z-[0];
+}
+
+.tabsContainer {
+  @apply flex flex-wrap gap-1;
+}
+
+.relativeContainer {
+  @apply relative;
+}

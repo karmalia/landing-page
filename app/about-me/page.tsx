@@ -39,7 +39,7 @@ const Experiences = [
   },
   {
     imgUrl: "/bizyeriz.png",
-    companyName: "Biz Yeriz",
+    companyName: "BizYeriz",
     jobTitle: "Mobile Developer",
     startDate: "May 2024",
     endDate: "~",
