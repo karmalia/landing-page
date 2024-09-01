@@ -1,6 +1,7 @@
 "use client";
 import Icons from "@/components/icons";
 import SteamModal from "@/components/layout/steam-modal";
+import Image from "next/image";
 import React, { useState } from "react";
 
 const modalsLookUp = {
@@ -14,12 +15,20 @@ function HomePage() {
   const ActiveModalC = modalsLookUp[activeModal];
   return (
     <>
-      <Icons.SteamIcon
+      <Image
+        width={32}
+        height={32}
+        src={"/Steam-Emblem.png"}
+        onClick={() => setActiveModal("steam")}
+        className="cursor-pointer"
+        alt="steam-logo"
+      />
+      {/* <Icons.SteamIcon
         width={32}
         height={32}
         onClick={() => setActiveModal("steam")}
         className="cursor-pointer"
-      />
+      /> */}
       {ActiveModalC && <ActiveModalC closeModal={() => setActiveModal("")} />}
     </>
   );
