@@ -17,7 +17,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className="h-dvh relative">
-        <main className="h-dvh w-full z-30 p-4">{children}</main>
+        <main className="h-dvh w-full z-30 p-5">{children}</main>
         <div className="w-full h-full absolute top-0 left-0 z-[-1] ">
           <Image
             src="/windows_xp.jpg"

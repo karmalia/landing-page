@@ -16,8 +16,8 @@ function HomePage() {
   return (
     <>
       <Image
-        width={32}
-        height={32}
+        width={42}
+        height={42}
         src={"/Steam-Emblem.png"}
         onClick={() => setActiveModal("steam")}
         className="cursor-pointer"
