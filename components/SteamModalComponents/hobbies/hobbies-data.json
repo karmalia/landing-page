@@ -1,0 +1,38 @@
+[
+  {
+    "imgUrl": "/hobbies/go-game.jpg",
+    "title": "GO",
+    "description": "Go is an ancient Chinese board game that I've been playing for six years. I consider myself an average player. My interest in Go began after hearing about AlphaGo, the A.I. that famously beat a world champion.",
+    "link": {
+      "href": "https://online-go.com/user/view/332183",
+      "text": "My OGS Account"
+    }
+  },
+  {
+    "imgUrl": "/hobbies/bass.jpg",
+    "title": "Bass Guitar",
+    "description": "I've been playing bass guitar for seven years. I love playing punk and metal songs. My favorite bands are RHCP, RATM, and Tool.",
+    "link": {
+      "href": "https://music.youtube.com/playlist?list=PLxC3T9HKOBg5KOyqUcgHYBIESyLjDEqCS&si=YNoqfYEqHw_DJGjJ",
+      "text": "My Youtube Playlist"
+    }
+  },
+  {
+    "imgUrl": "/hobbies/books.avif",
+    "title": "Reading",
+    "description": "I love reading books. My favorite genres are Si-Fi, Fantasy, and Mystery.",
+    "link": {
+      "href": "https://www.goodreads.com/user/show/57429332-i-smail-sevgi",
+      "text": "My Goodreads Account"
+    }
+  },
+  {
+    "imgUrl": "/hobbies/movie.avif",
+    "title": "Movies and Series",
+    "description": "I love watching series. My favorite series are Game of Thrones, Breaking Bad, and The Witcher.",
+    "link": {
+      "href": "https://www.imdb.com/user/ur69997062/",
+      "text": "My IMDB Account"
+    }
+  }
+]

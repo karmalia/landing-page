@@ -1,0 +1,29 @@
+[
+  {
+    "imgUrl": "/education/ayu_logo.png",
+    "universityName": "Ahmet Yesevi University",
+    "degree": "Management Information Systems",
+    "startDate": "2023",
+    "endDate": "~",
+    "description": "",
+    "progressPercentage": 80
+  },
+  {
+    "imgUrl": "/education/jagelonnian.jpg",
+    "universityName": "Jagiellonian University (Erasmus+ Program)",
+    "degree": "Education in German Teaching",
+    "startDate": "2019",
+    "endDate": "2020",
+    "progressPercentage": 100,
+    "description": ""
+  },
+  {
+    "imgUrl": "/education/mugla.png",
+    "universityName": "Muğla Sıtkı Koçman University",
+    "degree": "B.Ed. Education in German Teaching",
+    "startDate": "2016",
+    "endDate": "2022",
+    "progressPercentage": 100,
+    "description": ""
+  }
+]

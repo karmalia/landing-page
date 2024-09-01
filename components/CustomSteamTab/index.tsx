@@ -6,27 +6,22 @@ import useWindowSize from "@/utils/useWindowSize";
 import { SteamDropdown } from "react-steam-components";
 
 type SteamTabsProps = {
-  list: Array<{
-    label: string;
-    value: string;
-    isDisabled?: boolean;
-  }>;
-  activeTab: number;
+  lookUp: {
+    "About Me": () => React.JSX.Element;
+    Projects: () => React.JSX.Element;
+    Skills: () => React.JSX.Element;
+    Educations: () => React.JSX.Element;
+    Referances: () => React.JSX.Element;
+    Hobbies: () => React.JSX.Element;
+  };
+  activeTab: string;
   handleTab: any;
   children?: React.ReactNode;
 };
 
-const ContentWrapper = ({ children }: { children: React.ReactNode }) => {
-  const staticBorder = `p-2 min-w-52 min-h-24 bg-weldedIron border-t-2 border-t-steamOlive
-                border-l-2 border-l-steamOlive
-                border-r-2 border-r-borderBottomRight
-                border-b-2 border-b-borderBottomRight`;
-
-  return <div className={cn(staticBorder)}>{children || ""}</div>;
-};
 function CustomSteamTabs({
   children,
-  list,
+  lookUp,
   activeTab,
   handleTab,
 }: SteamTabsProps) {
@@ -39,30 +34,22 @@ function CustomSteamTabs({
   return (
     <div className="relative">
       <div className={`flex flex-wrap gap-1`}>
-        {list.map((tab, index) => (
+        {Object.keys(lookUp).map((tab, index) => (
           <div
             key={index}
             className={cn(tabBorder, {
-              "text-steamGold  z-[0]": activeTab === index,
+              "text-steamGold  z-[0]": activeTab === tab,
             })}
             onClick={() => handleTab(tab)}
           >
             <CustomSteamText
-              variant={
-                activeTab === index
-                  ? "goldLight"
-                  : tab.isDisabled
-                  ? "disabled"
-                  : "default"
-              }
+              variant={activeTab === tab ? "goldLight" : "default"}
             >
-              {tab.label}
+              {tab}
             </CustomSteamText>
           </div>
         ))}
       </div>
-
-      <ContentWrapper>{children}</ContentWrapper>
     </div>
   );
 }

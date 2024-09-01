@@ -1,66 +1,15 @@
-"use client";
-import Image from "next/image";
 import React from "react";
-import { SteamRadio, SteamText, SteamWindow } from "react-steam-components";
+import { SteamText, SteamWindow } from "react-steam-components";
 import CustomSteamRadio from "@/components/CustomSteamRadio/CustomSteamRadio";
 import BouncyWrapper from "@/components/shared/bouncy-wrapper/bouncy-wrapper";
 import Skill from "@/components/skills/skill";
 
-const FrontEndTechStack = [
-  {
-    label: "HTML5",
-    src: "/tech/icons8-html-480.png",
-  },
-  {
-    label: "CSS3",
-    src: "/tech/icons8-css-240.png",
-  },
-  {
-    label: "JavaScript",
-    src: "/tech/icons8-javascript-480.png",
-  },
-  {
-    label: "TypeScript",
-    src: "/tech/icons8-typescript-480.png",
-  },
-  {
-    label: "ReactJS",
-    src: "/tech/icons8-react-480.png",
-  },
-
-  {
-    label: "NextJS",
-    src: "/tech/icons8-nextjs-240.png",
-  },
-  {
-    label: "TailwindCSS",
-    src: "/tech/icons8-tailwindcss-480.png",
-  },
-];
-
-const BackEndTechStack = [
-  {
-    label: "NodeJS",
-    src: "/tech/icons8-nodejs-48.png",
-  },
-  {
-    label: "ExpressJS",
-    src: "/tech/icons8-express-js-500.png",
-  },
-  {
-    label: "MongoDB",
-    src: "/tech/icons8-mongodb-480.png",
-  },
-  {
-    label: "PostgreSQL",
-    src: "/tech/icons8-postgresql-480.png",
-  },
-];
+import SkillsData from "./skills-data.json";
 
 const TechStacks = {
-  FrontEnd: FrontEndTechStack,
-  BackEnd: BackEndTechStack,
-  All: [...FrontEndTechStack, ...BackEndTechStack],
+  FrontEnd: SkillsData.FrontEndTechStack,
+  BackEnd: SkillsData.BackEndTechStack,
+  All: [...SkillsData.FrontEndTechStack, ...SkillsData.BackEndTechStack],
 };
 
 function Skills() {

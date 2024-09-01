@@ -6,16 +6,6 @@ const nextConfig = {
     contentSecurityPolicy: "default-src 'self'; script-src 'none'; sandbox;",
     domains: ["camo.githubusercontent.com"],
   },
-  async redirects() {
-    return [
-      // Basic redirect
-      {
-        source: "/",
-        destination: "/about-me",
-        permanent: true,
-      },
-    ];
-  },
 };
 
 export default nextConfig;
