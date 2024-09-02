@@ -11,7 +11,7 @@ type SteamTabsProps = {
     Projects: () => React.JSX.Element;
     Skills: () => React.JSX.Element;
     Educations: () => React.JSX.Element;
-    Referances: () => React.JSX.Element;
+    References: () => React.JSX.Element;
     Hobbies: () => React.JSX.Element;
   };
   activeTab: string;

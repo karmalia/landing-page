@@ -20,7 +20,7 @@ const lookUp = {
   Projects: Projects,
   Skills: Skills,
   Educations: Educations,
-  Referances: Referances,
+  References: Referances,
   Hobbies: Hobbies,
 };
 const ContentWrapper = ({ children }: { children: React.ReactNode }) => {

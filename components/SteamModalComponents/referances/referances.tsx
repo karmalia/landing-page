@@ -11,7 +11,7 @@ function Referances() {
         variant="goldLight"
         className="space-y-2 w-full h-auto text-lg"
       >
-        <span>Here are my referances:</span>
+        <span>Here are my references:</span>
       </CustomSteamText>
       {ReferancesArr.map((referance) => (
         <Referance
