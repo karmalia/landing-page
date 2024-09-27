@@ -34,7 +34,7 @@ function Project({
 
   return (
     <SteamWindow variant="default" className="p-2 space-y-2 w-full h-auto">
-      <div className="flex gap-4 items-center justify-center flex-wrap lg:flex-nowrap ">
+      <div className="flex gap-4 items-start justify-center flex-wrap lg:flex-nowrap ">
         <SteamWindow variant="inner" className="p-1">
           <div className="w-40 h-40 bg-steam">
             <Image

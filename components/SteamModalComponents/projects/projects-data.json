@@ -1,5 +1,22 @@
 [
   {
+    "imgUrls": [
+      "/projects/different-color-serialized.jpg",
+      "/projects/delete-card.jpg",
+      "/projects/game-started.jpg",
+      "/projects/triple-eight.jpg",
+      "/projects/same-color-serialized.jpg"
+    ],
+    "title": "Matching Card Game",
+    "link": "https://github.com/karmalia/card-game",
+    "description": "I made a simple card game with React Native with Expo. It still needs some work to finish and publish on the App Store.",
+    "progress": 30,
+    "techs": [
+      { "label": "React Native", "url": "/tech/icons8-react-480.png" },
+      { "label": "TypeScript", "url": "/tech/icons8-typescript-480.png" }
+    ]
+  },
+  {
     "imgUrls": ["/projects/steam-lib-2.png", "/projects/steam-lib.png"],
     "title": "Steam Component Library",
     "link": "https://www.npmjs.com/package/react-steam-components",
